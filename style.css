@@ -1,0 +1,86 @@
+@font-face {
+   font-family: "Dirooz";
+   src: url("font/Dirooz-FD-WOL.ttf");
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style-type: none;
+   font-family: Dirooz;
+}
+
+.info-box {
+   margin: 0 auto;
+   padding: 10px 15px 0;
+   height: 485px;
+   box-shadow: 0 0 10px #999;
+   width: 90%;
+}
+@media screen and (min-width: 560px) {
+   .info-box {
+      max-width: 760px;
+   }
+}
+.info-box .info-box__ul {
+   max-height: 405px;
+   overflow-y: scroll;
+   text-align: right;
+   padding-right: 15px;
+}
+@media screen and (min-width: 560px) {
+   .info-box .info-box__ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+   }
+}
+
+@media screen and (min-width: 560px) {
+   .info-box .info-box__li {
+      width: 50%;
+   }
+}
+
+.info-box .info-box__li:not(:last-child) {
+   margin-bottom: 10px;
+}
+.info-box__phoneNumber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.info-box__phoneNumber > i {
+  color: #4a0985;
+  background-color: #e1e1e1cf;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-box .info-box__li h4 {
+   color: #999;
+}
+
+.info-box .info-box__li p {
+   margin-top: -5px;
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+::-webkit-scrollbar-track {
+   background: #e6d6ee;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #cbb4d9;
+}
